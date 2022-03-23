@@ -1,23 +1,51 @@
 # Base de dados Births.csv
 
+A base de dados _Births.csv_ se trata de um relatório de nascimentos nos Estados Unidos de 1969 a 2008, com detalhamento de ano, mês dia e gênero até 1988. A partir de 1989, os números passaram a ser consolidados por mês, porém ainda mantendo a separação por gênero.
+
 ## Tratamento dos dados
+
+Os dados na base _Births.csv_ precisaram ser tratados para remover informações incorretas e que atrapalhariam as análises. Para isso, foi utilizada a biblioteca Pandas, transformando a tabela original em DataFrame e removendo dias incorretos.
+
+Além disso, foram criadas colunas, pivot tables e funções para auxiliar na geração dos gráficos.
+
+Para criação dos gráficos, foram utilizadas as bibliotecas Matplotlib e Seaborn.
 
 ## Dados observados
 
 ### Nascimentos por ano
+
 ![](Graficos/Births/1.1.png)
+
+Gerando um gráfico que demonstra o total de nascimentos por ano, separados por gênero, foi possível notar uma queda acentuada no início da década de 70. Após isso, os nascimentos voltam a crescer na segunda metade da década e levam aproximadamente 10 anos para retornar aos números anteriores. 
+
+É possível notar uma queda nos nascimentos na década de 90, porém menos brusca e mais longa.
 
 ### Diferença entre gêneros por ano
 ![](Graficos/Births/1.2.png)
 
+Esse gráfico foi criado para demonstrar a diferença de natalidade entre os gêneros que permanece consistente ao longo dos anos analisados.
+
 ### Nascimentos por dia da semana
 ![](Graficos/Births/1.3.png)
+
+Dadas as limitações da base de dados, o gráfico demonstrando os nascimentos por dia da semana contemplam os dados de 1969 a 1988.
+
+Nele, é possível notar uma maior incidência de nascimentos no meio da semana, principalmente na terça-feira. Essa diferença entre os dias permanece consistente entre os dois gêneros.
 
 ### Nascimentos por década
 ![](Graficos/Births/1.4.png)
 
+Consolidando os nascimentos por década, é possível notar um crescimento contínuo da natalidade, consistente entre gêneros, durante as décadas de 70 a 90.
+
+É necessário ressaltar que, por começar em 1969, a década de 60 se encontra sub-representada. Para a década de 2000, os dados terminam em 2008, portanto não é possível afirmar com segurança se os nascimentos dessa década ultrapassariam a década anterior.
+
 ### Nascimentos por gênero a cada década (percentual)
 ![](Graficos/Births/1.5.png)
+
+Ainda considerando os nascimentos por década, é possível notar que a quantidade de pessoas nascidas nos gêneros masculino e feminino é muito próxima, com pouca variação durante o período analisado.
+
+Como um exemplo, a maior diferença ocorre no ano de 2006, onde nasceram aproximadamente 103 mil bebês do sexo masculino a mais do que do sexo feminino.
+
 
 # Base de dados Brasil.csv
 
